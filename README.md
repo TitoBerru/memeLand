@@ -3,7 +3,7 @@
 
 
 
-<h4>:construction: Proyecto en construcción :construction:</h4>
+<h2 align='center'>:construction: Proyecto en construcción :construction:</h2>
 
 ## :hammer:Funcionalidades del proyecto
 - `Consumir Api de Fotos de Pexels`
