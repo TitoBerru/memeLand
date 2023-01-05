@@ -6,8 +6,8 @@ const Search = ({ search, setInput }) => {
   };
   return (
     <div className="search">
-      <input type="text" onChange={inputHandler} placeholder='Puede buscar por topico'/>
-      <button onClick={search} type='button' className="btn btn-primary mt-4 mb-4">Buscar Foto</button>
+      <input type="text" onChange={inputHandler} placeholder='Search by topic...'/>
+      <button onClick={search} type='button' className="btn btn-primary mt-4 mb-4">Search</button>
     </div>
   );
 };

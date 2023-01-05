@@ -1,5 +1,5 @@
 import Imgmeme from './componentes/Imgmeme';
-import Home from './Pages/Home';
+import Home from './componentes/Home';
 
 
 function App() {

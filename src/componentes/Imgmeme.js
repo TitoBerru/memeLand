@@ -1,6 +1,6 @@
 import html2canvas from 'html2canvas';
 import React, {useState} from 'react';
-import './Imgmeme.css';
+import '../styles/Imgmeme.css';
 
 const Imgmeme = ()=>{
 

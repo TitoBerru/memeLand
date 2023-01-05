@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Search from "../componentes/ImgMeme2/Search";
-import Picture from "../componentes/ImgMeme2/Picture";
-import './Home.css'
+import Search from "./Search";
+import Picture from "./Picture";
+import './../styles/Home.css'
 import html2canvas from 'html2canvas';
 
 export const Home = () => {
@@ -89,7 +89,12 @@ export const Home = () => {
         <button onClick={morepicture} type='button' className="btn btn-secondary mt-4 mb-4">Cargar mas fotos</button>
         <button onClick={Descargar} type="button" className='btn btn-secondary mt-4 mb-4'>Descargar meme</button>
     </div>
-      
+      <div className="thanks">Photos powered by: <span>
+        <a href="https://www.pexels.com">
+        <img src="https://images.pexels.com/lib/api/pexels.png" />
+      </a> & Design by Tito Berru
+      </span>
+      </div>
       
     </div>
   );

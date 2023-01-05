@@ -1,3 +1,5 @@
+doc de la Api : https://www.pexels.com/es-es/api/documentation/#guidelines
+
 import { createClient } from 'pexels';
 
 const client = createClient('563492ad6f9170000100000177956e8507704dfe86e38f56c2016809');
@@ -7,3 +9,5 @@ const client = createClient('563492ad6f9170000100000177956e8507704dfe86e38f56c20
 const query = 'Nature';
 
 client.photos.search({ query, per_page: 1 }).then(photos => {...});
+
+

@@ -85,6 +85,9 @@
     padding: 0.25rem;
     border: none;
   }
+  .search input:focus{
+    outline: none;
+  }
   
   .search button {
     /* background-color: #490149; */
@@ -143,5 +146,12 @@
   .pictures .picture .imageContainer img:hover {
     -webkit-transform: scale(1.25);
             transform: scale(1.25);
+  }
+  .thanks{
+    text-align: center;
+   
+  }
+  .thanks img{
+    height: 5vh;
   }
   /*# sourceMappingURL=style.css.map */
