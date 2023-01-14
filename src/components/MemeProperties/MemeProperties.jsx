@@ -13,7 +13,7 @@ const MemeProperties = ({
 				onChange={onSetMemeText}
 				placeholder={` ${textNumber}`}
 			/>
-			<p>Tamaño del {textNumber}</p>
+			<p> {textNumber} SIZE</p>
 			<input
 				type="range"
 				min="0"
@@ -21,7 +21,7 @@ const MemeProperties = ({
 				value={memeTextSize}
 				onChange={onSetMemeTextSize}
 			></input>
-			<p>Color del {textNumber}</p>
+			<p>{textNumber} COLOR</p>
 			<input type="color" onChange={onSetMemeTextColor}></input>
 		</div>
 	);

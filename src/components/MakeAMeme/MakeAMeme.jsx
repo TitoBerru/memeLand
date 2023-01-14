@@ -13,7 +13,6 @@ const MakeAMeme = () => {
     const [memeTextSize2, setMemeTextSize2] = useState(22);
     const [memeTextColor, setMemeTextColor] = useState('#FFF');
     const [memeTextColor2, setMemeTextColor2] = useState('#FFF');
-    const [showText2, setShowText2] = useState(false);
     useEffect(() => {
         const fetchData = async () => {
           try {
@@ -78,7 +77,7 @@ const MakeAMeme = () => {
           
         </div>
         <button onClick={Download} type="button" className="btnDownload">
-            DESCARGAR MEME
+            DOWNLOAD MEME
           </button>
         <figure id="export">
         <figcaption
