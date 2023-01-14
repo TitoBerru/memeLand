@@ -1,0 +1,126 @@
+.headerContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'roboto', sans-serif;
+
+  }
+  
+  .container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  
+  .memeProperties {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .titleText {
+    margin: 25px 0 5px 0;
+  }
+  
+  input {
+    margin: 5px 0 8px 0;
+  }
+  
+  select,
+  input {
+    height: 5vh;
+    width: 30vw;
+    font-size: 1.2em;
+  }
+  
+  button {  
+    height: 35px;
+    width: 160px;
+    margin: 5px 0;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(196, 196, 196);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    transform: scale(1.02);
+    background-color: rgb(176, 176, 176);
+  }
+  
+  .btnDownload {  
+    width: 35vw;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  figure {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 425px;
+    width: 425px;
+    background-color: #000;
+  }
+  
+  .memeImage {
+    height: 400px;
+    width: 400px;
+  }
+  
+  .memeText1 , .memeText2 {
+    position: absolute;
+    margin: auto;
+    /* bottom: 15px; */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    word-wrap: break-word;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 1px 3px 3px black;
+  }
+  .memeText1{
+    top: 3vh;
+  }
+  .memeText2{
+    bottom: 3vh;
+  }
+  
+  
+  /* MEDIA QUERIES */
+  
+  @media only screen and (max-width: 900px) {
+    
+  
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    figure {
+      height: 325px;
+      width: 325px;
+    }
+  
+    .memeImage {
+      height: 300px;
+      width: 300px;
+    }
+  }
+  
