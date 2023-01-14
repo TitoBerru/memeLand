@@ -75,10 +75,11 @@ const MakeAMeme = () => {
             />
           
 
-          <button onClick={Download} type="button" className="btnDownload">
+          
+        </div>
+        <button onClick={Download} type="button" className="btnDownload">
             DESCARGAR MEME
           </button>
-        </div>
         <figure id="export">
         <figcaption
             className="memeText1"

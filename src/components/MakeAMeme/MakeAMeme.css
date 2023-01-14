@@ -1,126 +1,151 @@
-.headerContainer {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  h1 {
-    color: #fff;
-    font-size: 3em;
-    text-align: center;
-    font-weight: 900;
-    font-family: 'roboto', sans-serif;
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+width: 95vw;
+height: 90vh;
+}
 
-  }
+h1 {
+  color: #fff;
+  text-shadow: 1px 3px 7px #000;
+  text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 900;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 1px;
+}
+
+.container {
   
-  .container {
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    flex-direction: row-reverse;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
-  .memeProperties {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+}
+
+.memeProperties {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
-  .titleText {
-    margin: 25px 0 5px 0;
+}
+
+.titleText {
+  margin: 25px 0 5px 0;
+}
+
+input {
+  margin: 5px 0 8px 0;
+}
+
+select,
+input {
+  padding: 5px;
+  width: 300px;
+  font-size: 15px;
+}
+
+button {
+  margin: 5px 0;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(196, 196, 196);
+  transition: all 0.3s ease-in-out;
+
+}
+
+button:hover {
+  transform: scale(1.02);
+  background-color: rgb(176, 176, 176);
+}
+
+.btnDownload {
+  position: absolute;
+  bottom:6vh;
+  right: 23vw;
+  width: 425px;
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+  padding: 15px;
+}
+
+figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 425px;
+  width: 425px;
+  background-color: #000;
+}
+
+.memeImage {
+  height: 400px;
+  width: 400px;
+}
+
+.memeText {
+  position: absolute;
+  margin: auto;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  word-wrap: break-word;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  text-shadow: 1px 3px 3px black;
+}
+
+/* Animation */
+
+@keyframes movement {
+  from {
+    transform: rotate(15deg);
   }
-  
-  input {
-    margin: 5px 0 8px 0;
+  to {
+    transform: rotate(-25deg);
   }
-  
-  select,
-  input {
-    height: 5vh;
-    width: 30vw;
-    font-size: 1.2em;
+}
+
+@keyframes invert {
+  from {
+    filter: invert(0);
   }
-  
-  button {  
-    height: 35px;
-    width: 160px;
-    margin: 5px 0;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(196, 196, 196);
-    transition: all 0.3s ease-in-out;
+  to {
+    filter: invert(100%);
   }
-  
-  button:hover {
-    transform: scale(1.02);
-    background-color: rgb(176, 176, 176);
-  }
-  
-  .btnDownload {  
-    width: 35vw;
-    color: #fff;
-    background-color: rgb(0, 0, 0);
-  }
-  
-  figure {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 425px;
-    width: 425px;
-    background-color: #000;
-  }
-  
-  .memeImage {
-    height: 400px;
-    width: 400px;
-  }
-  
-  .memeText1 , .memeText2 {
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 900px) {
+  .logo {
     position: absolute;
-    margin: auto;
-    /* bottom: 15px; */
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    word-wrap: break-word;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 24px;
-    text-shadow: 1px 3px 3px black;
+    top: 5px;
+    left: 5px;
   }
-  .memeText1{
-    top: 3vh;
+
+  .memeGeneratorContainer {
+    flex-direction: column;
+    height: auto;
   }
-  .memeText2{
-    bottom: 3vh;
+
+  figure {
+    height: 325px;
+    width: 325px;
   }
-  
-  
-  /* MEDIA QUERIES */
-  
-  @media only screen and (max-width: 900px) {
-    
-  
-    .container {
-      flex-direction: column;
-      height: auto;
-    }
-  
-    figure {
-      height: 325px;
-      width: 325px;
-    }
-  
-    .memeImage {
-      height: 300px;
-      width: 300px;
-    }
+
+  .memeImage {
+    height: 300px;
+    width: 300px;
   }
-  
+}
