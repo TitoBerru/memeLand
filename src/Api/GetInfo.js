@@ -8,8 +8,6 @@ export const Search = async () => {
       if(element.image.length !== 0){
         responseWithImg.push(element)
       }
-      
     });
-    console.log(responseWithImg)
   return responseWithImg;
 };
