@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/memeLand/static/css/main.472fe1ad.css",
-    "main.js": "/memeLand/static/js/main.8f67bb8c.js",
+    "main.js": "/memeLand/static/js/main.627d6ac8.js",
     "static/js/787.232b4ee4.chunk.js": "/memeLand/static/js/787.232b4ee4.chunk.js",
     "static/media/logo.svg": "/memeLand/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/memeLand/index.html",
     "main.472fe1ad.css.map": "/memeLand/static/css/main.472fe1ad.css.map",
-    "main.8f67bb8c.js.map": "/memeLand/static/js/main.8f67bb8c.js.map",
+    "main.627d6ac8.js.map": "/memeLand/static/js/main.627d6ac8.js.map",
     "787.232b4ee4.chunk.js.map": "/memeLand/static/js/787.232b4ee4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.472fe1ad.css",
-    "static/js/main.8f67bb8c.js"
+    "static/js/main.627d6ac8.js"
   ]
 }
