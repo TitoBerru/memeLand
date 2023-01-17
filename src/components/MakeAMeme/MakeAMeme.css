@@ -159,10 +159,11 @@ button {
   position: relative;
   margin: 10px;
   top: 0;
-  left: 50vh;
+  /* left: 50vh; */
   width: 220px;
   color: #fff;
   background-color: rgb(0, 0, 0);
   padding: 0;
+  align-self: center;
   }
 }
