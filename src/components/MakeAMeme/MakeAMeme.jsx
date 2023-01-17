@@ -16,7 +16,7 @@ const MakeAMeme = () => {
     const [memeTextColor2, setMemeTextColor2] = useState('#FFF');
     useEffect(() => {
         const fetchData = async () => {
-          try {
+          try {  
             const response = await Search();
             setMemeImage(response[0].image);
             setcharacterList(response);
@@ -50,9 +50,13 @@ const MakeAMeme = () => {
           <h2 className="titleText">Choose a picture</h2>
           <select onChange={(e) => setMemeImage(e.target.value)}>
             {characterList.map((meme) => (
+              
               <option key={meme.id} value={meme.image}>
+                
                 {meme.name}
+                
               </option>
+              
             ))}
           </select>
           <h2 className="titleText">Text UP</h2>

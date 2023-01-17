@@ -31,24 +31,26 @@ h1 {
 .titleText {
   margin: 10px 0 5px 0;
 }
-p{
+
+p {
   height: 2px;
 }
 
-select, .inputText {
+select,
+.inputText {
   height: 5vh;
   width: 30vw;
   font-size: 1.2em;
 }
 
-.btnDownload {  
+.btnDownload {
   position: absolute;
   top: 85vh;
   width: 20vh;
   color: #fff;
   background-color: rgb(0, 0, 0);
- 
-  
+
+
 }
 
 figure {
@@ -66,7 +68,8 @@ figure {
   width: 400px;
 }
 
-.memeText1 , .memeText2 {
+.memeText1,
+.memeText2 {
   position: absolute;
   margin: auto;
   left: 50%;
@@ -79,10 +82,12 @@ figure {
   font-size: 24px;
   text-shadow: 1px 3px 3px black;
 }
-.memeText1{
+
+.memeText1 {
   top: 3vh;
 }
-.memeText2{
+
+.memeText2 {
   bottom: 3vh;
 }
 
@@ -100,14 +105,14 @@ button {
   border-radius: 1em;
   outline: none;
   box-shadow: 0 0 1em .25em var(--glow-color),
-         0 0 4em 1em var(--glow-spread-color),
-         inset 0 0 .75em .25em var(--glow-color);
+      0 0 4em 1em var(--glow-spread-color),
+      inset 0 0 .75em .25em var(--glow-color);
   text-shadow: 0 0 .5em var(--glow-color);
   position: relative;
   transition: all 0.3s;
- }
- 
- button::after {
+}
+
+button::after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -119,51 +124,52 @@ button {
   filter: blur(2em);
   opacity: .7;
   transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
- }
- 
- button:hover {
+}
+
+button:hover {
   color: var(--btn-color);
   background-color: var(--glow-color);
   box-shadow: 0 0 1em .25em var(--glow-color),
-         0 0 4em 2em var(--glow-spread-color),
-         inset 0 0 .75em .25em var(--glow-color);
- }
- 
- button:active {
+      0 0 4em 2em var(--glow-spread-color),
+      inset 0 0 .75em .25em var(--glow-color);
+}
+
+button:active {
   box-shadow: 0 0 0.6em .25em var(--glow-color),
-         0 0 2.5em 2em var(--glow-spread-color),
-         inset 0 0 .5em .25em var(--glow-color);
- }
+      0 0 2.5em 2em var(--glow-spread-color),
+      inset 0 0 .5em .25em var(--glow-color);
+}
 
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 900px) {
-  
+
 
   .container {
-    flex-direction: column;
-    height: auto;
+      flex-direction: column;
+      height: auto;
   }
 
   figure {
-    height: 325px;
-    width: 325px;
-    margin:auto;
+      height: 325px;
+      width: 325px;
+      margin: auto;
   }
 
   .memeImage {
-    height: 300px;
-    width: 300px;
+      height: 300px;
+      width: 300px;
   }
-  .btnDownload {  
-  position: relative;
-  margin: 10px;
-  top: 0;
-  /* left: 50vh; */
-  width: 220px;
-  color: #fff;
-  background-color: rgb(0, 0, 0);
-  padding: 0;
-  align-self: center;
+
+  .btnDownload {
+      position: relative;
+      margin: 10px;
+      top: 0;
+      /* left: 50vh; */
+      width: 220px;
+      color: #fff;
+      background-color: rgb(0, 0, 0);
+      padding: 0;
+      align-self: center;
   }
 }
