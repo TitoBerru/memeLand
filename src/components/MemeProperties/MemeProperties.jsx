@@ -17,7 +17,7 @@ const MemeProperties = ({
 			<input
 				type="range"
 				min="0"
-				max="72"
+				max="52"
 				value={memeTextSize}
 				onChange={onSetMemeTextSize}
 			></input>

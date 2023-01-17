@@ -4,6 +4,7 @@ import  {Search}  from '../../Api/GetInfo';
 import MemeProperties from './../MemeProperties/MemeProperties';
 import './MakeAMeme.css'
 
+
 const MakeAMeme = () => {
     const [characterList, setcharacterList] = useState([]);
     const [memeImage, setMemeImage] = useState('');
@@ -76,9 +77,11 @@ const MakeAMeme = () => {
 
           
         </div>
-        <button onClick={Download} type="button" className="btnDownload">
-            DOWNLOAD MEME
+        <div className='btnDownload'>
+        <button onClick={Download} type="button" className="button">
+            DOWNLOAD
           </button>
+          </div>
         <figure id="export">
         <figcaption
             className="memeText1"
